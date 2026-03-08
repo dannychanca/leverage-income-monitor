@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { signIn } from "next-auth/react";
-import { useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -13,11 +12,11 @@ interface ProviderMap {
 
 export default function SignInPage() {
   const callbackUrl = "/dashboard";
-  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [providers, setProviders] = useState<ProviderMap>({});
   const [providersLoaded, setProvidersLoaded] = useState(false);
   const [providersLoadFailed, setProvidersLoadFailed] = useState(false);
+  const [authError, setAuthError] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [isEmailLoading, setIsEmailLoading] = useState(false);
@@ -50,7 +49,12 @@ export default function SignInPage() {
 
   const hasGoogle = Boolean(providers.google);
   const hasEmail = Boolean(providers.email);
-  const authError = searchParams.get("error");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setAuthError(params.get("error") ?? "");
+  }, []);
+
   const friendlyError =
     authError === "Callback"
       ? "Google callback failed. Check OAuth redirect URL and server env settings."
