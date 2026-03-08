@@ -47,6 +47,14 @@ export default function FundDetailPage() {
     setDividendPerUnit(fund.dividendPerUnit.toString());
   }, [fund]);
 
+  const effectiveFunds = useMemo(
+    () => buildEffectiveFunds(data.funds, data.transactions),
+    [data.funds, data.transactions]
+  );
+  const effectiveFund = fund
+    ? effectiveFunds.find((f) => f.id === fund.id) ?? fund
+    : null;
+
   if (!fund) {
     return (
       <div className="rounded-lg border bg-white p-6 text-sm">
@@ -55,16 +63,13 @@ export default function FundDetailPage() {
     );
   }
 
-  const effectiveFund = useMemo(
-    () => buildEffectiveFunds(data.funds, data.transactions).find((f) => f.id === fund.id) ?? fund,
-    [data.funds, data.transactions, fund]
-  );
-  const metrics = calculateFundMetrics(effectiveFund);
-  const thresholdRisk = calculateFundThresholdRisk(effectiveFund);
+  const resolvedFund = effectiveFund ?? fund;
+  const metrics = calculateFundMetrics(resolvedFund);
+  const thresholdRisk = calculateFundThresholdRisk(resolvedFund);
   const totalDividendsCollected = records.reduce((sum, record) => sum + record.totalDividendReceived, 0);
   const totalFundingCostPaid = records.reduce((sum, record) => sum + record.totalFundingCost, 0);
-  const derivedCostBasis = effectiveFund.unitsHeld * effectiveFund.averageCost;
-  const initialLtv = derivedCostBasis > 0 ? effectiveFund.loanAmount / derivedCostBasis : 0;
+  const derivedCostBasis = resolvedFund.unitsHeld * resolvedFund.averageCost;
+  const initialLtv = derivedCostBasis > 0 ? resolvedFund.loanAmount / derivedCostBasis : 0;
   const cumulativeNetPnL = metrics.unrealizedPnL + totalDividendsCollected - totalFundingCostPaid;
   const showTransactionOnboarding = transactions.length === 0 || searchParams.get("onboarding") === "add-transaction";
 
@@ -127,7 +132,7 @@ export default function FundDetailPage() {
             <SummaryCard title="Cost Basis" value={formatCurrency(derivedCostBasis, fund.currency)} />
             <SummaryCard
               title="Loan Amount"
-              value={formatCurrency(effectiveFund.loanAmount, effectiveFund.currency)}
+              value={formatCurrency(resolvedFund.loanAmount, resolvedFund.currency)}
               tone="warning"
             />
             <SummaryCard title="Equity Value" value={formatCurrency(metrics.equityValue, fund.currency)} tone="success" />
@@ -299,8 +304,8 @@ export default function FundDetailPage() {
             <SummaryCard
               title="All-in Funding Rate"
               value={formatPercent(metrics.allInFundingRate)}
-              subtitle={`Base ${formatPercent(effectiveFund.fundingBaseRate)} + Spread ${formatPercent(
-                effectiveFund.fundingSpread
+              subtitle={`Base ${formatPercent(resolvedFund.fundingBaseRate)} + Spread ${formatPercent(
+                resolvedFund.fundingSpread
               )}`}
             />
           </div>
@@ -404,10 +409,10 @@ export default function FundDetailPage() {
         <CardContent className="grid grid-cols-1 gap-2 text-sm md:grid-cols-2">
           <Detail
             label="Units Held"
-            value={effectiveFund.unitsHeld.toLocaleString(undefined, { maximumFractionDigits: 4 })}
+            value={resolvedFund.unitsHeld.toLocaleString(undefined, { maximumFractionDigits: 4 })}
           />
           <Detail label="Current NAV" value={formatCurrency(fund.currentNav, fund.currency)} />
-          <Detail label="Average Cost" value={formatCurrency(effectiveFund.averageCost, fund.currency)} />
+          <Detail label="Average Cost" value={formatCurrency(resolvedFund.averageCost, fund.currency)} />
           <Detail label="Cost Basis" value={formatCurrency(derivedCostBasis, fund.currency)} />
           <Detail
             label="Annualized Distribution Yield"
