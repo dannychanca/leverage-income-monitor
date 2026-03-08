@@ -1,0 +1,89 @@
+{
+  "" : {
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedger-primary.dia",
+    "emit-module-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedger-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedger-primary-emit-module.dia",
+    "pch" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedger-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedger-primary.swiftdeps"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/FinanceLedgerApp.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/FinanceLedgerApp~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/MainTabView.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/MainTabView~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/Models/LedgerEntry.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerEntry~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/Models/LedgerStore.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerStore~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/Views/AddEntryView.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/AddEntryView~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/Views/DashboardView.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/FinanceLedger/Views/LedgerCategoryView.swift" : {
+    "const-values" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.swiftconstvalues",
+    "dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.d",
+    "diagnostics" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.dia",
+    "index-unit-output-path" : "/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.o",
+    "llvm-bc" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.bc",
+    "object" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.o",
+    "swift-dependencies" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView.swiftdeps",
+    "swiftmodule" : "/Users/dannychan/Library/Mobile Documents/com~apple~CloudDocs/Codex Folder/FinanceLedger/.derivedData/Build/Intermediates.noindex/FinanceLedger.build/Debug-iphoneos/FinanceLedger.build/Objects-normal/arm64/LedgerCategoryView~partial.swiftmodule"
+  }
+}

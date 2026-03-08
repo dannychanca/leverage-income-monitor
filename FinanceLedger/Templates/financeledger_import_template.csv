@@ -1,0 +1,4 @@
+date,type,account,from_account,to_account,amount,currency,category,payee,notes,cleared,status,repeat_frequency
+2026-02-20,expense,Cash at Bank,,,12.50,SGD,Food,NTUC,Lunch,TRUE,posted,never
+2026-02-21,income,Cash at Bank,,,2500.00,SGD,Salary,Employer,Monthly salary,TRUE,posted,monthly
+2026-02-22,transfer,,Cash at Bank,Savings Account,200.00,SGD,,,Move to savings,TRUE,posted,never
