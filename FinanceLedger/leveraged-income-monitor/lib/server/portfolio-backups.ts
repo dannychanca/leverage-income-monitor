@@ -23,21 +23,21 @@ const AUTO_BACKUP_WINDOW_MS = 6 * 60 * 60 * 1000;
 const MAX_BACKUPS_PER_USER = 200;
 
 async function ensureBackupsTable() {
-  await prisma.$executeRawUnsafe(`
+  await prisma.$executeRaw`
     CREATE TABLE IF NOT EXISTS portfolio_backups (
       id TEXT PRIMARY KEY,
       userId TEXT NOT NULL,
       source TEXT NOT NULL,
       note TEXT,
       data TEXT NOT NULL,
-      createdAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+      createdAt TIMESTAMPTZ NOT NULL DEFAULT NOW()
     )
-  `);
+  `;
 
-  await prisma.$executeRawUnsafe(`
+  await prisma.$executeRaw`
     CREATE INDEX IF NOT EXISTS idx_portfolio_backups_user_created
     ON portfolio_backups(userId, createdAt DESC)
-  `);
+  `;
 }
 
 export async function createBackup(params: {
@@ -52,31 +52,22 @@ export async function createBackup(params: {
   const payload = JSON.stringify(params.data);
   const note = params.note ?? null;
 
-  await prisma.$executeRawUnsafe(
-    `INSERT INTO portfolio_backups (id, userId, source, note, data, createdAt) VALUES (?, ?, ?, ?, ?, datetime('now'))`,
-    id,
-    params.userId,
-    params.source,
-    note,
-    payload
-  );
+  await prisma.$executeRaw`
+    INSERT INTO portfolio_backups (id, userId, source, note, data, createdAt)
+    VALUES (${id}, ${params.userId}, ${params.source}, ${note}, ${payload}, NOW())
+  `;
 
-  await prisma.$executeRawUnsafe(
-    `
+  await prisma.$executeRaw`
     DELETE FROM portfolio_backups
-    WHERE userId = ?
+    WHERE userId = ${params.userId}
       AND id NOT IN (
         SELECT id
         FROM portfolio_backups
-        WHERE userId = ?
-        ORDER BY datetime(createdAt) DESC
-        LIMIT ?
+        WHERE userId = ${params.userId}
+        ORDER BY createdAt DESC
+        LIMIT ${MAX_BACKUPS_PER_USER}
       )
-    `,
-    params.userId,
-    params.userId,
-    MAX_BACKUPS_PER_USER
-  );
+  `;
 
   return id;
 }
@@ -84,16 +75,13 @@ export async function createBackup(params: {
 export async function createAutoBackupIfDue(userId: string, data: PortfolioData) {
   await ensureBackupsTable();
 
-  const rows = (await prisma.$queryRawUnsafe(
-    `
+  const rows = (await prisma.$queryRaw`
     SELECT id, source, note, data, createdAt
     FROM portfolio_backups
-    WHERE userId = ? AND source = 'AUTO_SYNC'
-    ORDER BY datetime(createdAt) DESC
+    WHERE userId = ${userId} AND source = 'AUTO_SYNC'
+    ORDER BY createdAt DESC
     LIMIT 1
-    `,
-    userId
-  )) as BackupRow[];
+  `) as BackupRow[];
 
   const latest = rows[0];
   if (!latest) {
@@ -110,17 +98,13 @@ export async function createAutoBackupIfDue(userId: string, data: PortfolioData)
 
 export async function listBackups(userId: string, limit = 30) {
   await ensureBackupsTable();
-  const rows = (await prisma.$queryRawUnsafe(
-    `
+  const rows = (await prisma.$queryRaw`
     SELECT id, source, note, createdAt
     FROM portfolio_backups
-    WHERE userId = ?
-    ORDER BY datetime(createdAt) DESC
-    LIMIT ?
-    `,
-    userId,
-    Math.max(1, Math.min(limit, MAX_BACKUPS_PER_USER))
-  )) as Array<{ id: string; source: BackupSource; note: string | null; createdAt: string }>;
+    WHERE userId = ${userId}
+    ORDER BY createdAt DESC
+    LIMIT ${Math.max(1, Math.min(limit, MAX_BACKUPS_PER_USER))}
+  `) as Array<{ id: string; source: BackupSource; note: string | null; createdAt: string }>;
 
   return rows.map(
     (row): BackupListItem => ({
@@ -134,16 +118,12 @@ export async function listBackups(userId: string, limit = 30) {
 
 export async function getBackupData(userId: string, backupId: string) {
   await ensureBackupsTable();
-  const rows = (await prisma.$queryRawUnsafe(
-    `
+  const rows = (await prisma.$queryRaw`
     SELECT id, source, note, data, createdAt
     FROM portfolio_backups
-    WHERE userId = ? AND id = ?
+    WHERE userId = ${userId} AND id = ${backupId}
     LIMIT 1
-    `,
-    userId,
-    backupId
-  )) as BackupRow[];
+  `) as BackupRow[];
 
   const row = rows[0];
   if (!row) return null;
@@ -158,10 +138,5 @@ export async function getBackupData(userId: string, backupId: string) {
 
 export async function deleteBackup(userId: string, backupId: string) {
   await ensureBackupsTable();
-  await prisma.$executeRawUnsafe(
-    `DELETE FROM portfolio_backups WHERE userId = ? AND id = ?`,
-    userId,
-    backupId
-  );
+  await prisma.$executeRaw`DELETE FROM portfolio_backups WHERE userId = ${userId} AND id = ${backupId}`;
 }
-
